@@ -1,0 +1,27 @@
+@use "sass:math";
+@use "variables" as v;
+
+#board {
+  width: v.$board-dimension;
+  height: v.$board-dimension;
+  display: flex;
+  flex-wrap: wrap;
+
+  .cell {
+    background: v.$cell-bg;
+    border: 1px solid v.$border-color;
+    width: math.div(v.$board-dimension, 3);
+    height: math.div(v.$board-dimension, 3);
+    display: grid;
+    place-items: center;
+    i {
+      font-size: 4rem;
+    }
+  }
+  .O {
+    color: v.$color-o;
+  }
+  .X {
+    color: v.$color-x;
+  }
+}

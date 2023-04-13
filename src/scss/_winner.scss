@@ -1,0 +1,14 @@
+@use "variables" as v;
+
+#winner {
+  width: v.$board-dimension;
+  border: 2px solid v.$border-color;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-weight: bold;
+  background: v.$light-color;
+  color: v.$border-color;
+  padding: 5px 10px;
+  text-align: center;
+  display: none;
+}
